@@ -75,6 +75,12 @@ export function PaymentRefundPolicyContent() {
           <li><strong>New sellers:</strong> your first payouts are held a bit longer (about 21 days) as fraud protection. This eases to the normal schedule once you verify your identity with Stripe and complete a few clean sales.</li>
           <li><strong>Minimum payout:</strong> a small minimum (about &euro;10) applies. Balances below it add up and are released once they reach the minimum, or after 30 days at the latest.</li>
         </ul>
+        <p>
+          If a refund or chargeback comes in <strong>after</strong> you have already been paid (a late
+          card chargeback, for example), that amount comes back out of your next payouts. If it is more
+          than your upcoming payouts cover, it becomes a balance you owe until it is settled. The holds
+          above are there to make this rare, but a bank chargeback can still arrive months later.
+        </p>
       </section>
 
       <section>

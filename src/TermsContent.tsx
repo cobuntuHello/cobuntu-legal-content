@@ -19,6 +19,10 @@
  * which reads as a payment-facilitator / disclosed-agent model; and EU VAT
  * deemed-supplier rules (Implementing Reg. Art. 9a / 14a) may require accounting for
  * VAT on the full sale rather than on Cobuntu's commission only (Sections 15.2/15.3).
+ * COUNSEL should also confirm the post-payout recovery / clawback clause (Section 9.7):
+ * netting a refunded or charged-back amount off future payouts, debiting the connected
+ * account, and carrying an unrecovered shortfall as a debt owed by the Seller/organiser
+ * (consumer-law limits may apply where the Seller is an individual, not a business).
  *
  * Scope (intentional omissions, business reasons):
  * - Premium subscriptions are not described (feature on hold).
@@ -494,6 +498,46 @@ export function TermsContent() {
           converted (that is, pre-approval) do <strong>not</strong> appear in this line item because
           the Community is not charged for them.
         </p>
+
+        <h3>9.7 Post-Payout Recovery (Clawback)</h3>
+        <p>
+          The escrow and hold periods in Sections 9.1 to 9.4 are designed to keep funds on the
+          Platform until a sale&rsquo;s refund exposure has largely passed, so that most refunds and
+          disputes are resolved <em>before</em> the Seller or Community organiser is paid. They reduce
+          this exposure but cannot eliminate it: a card chargeback in particular can be raised by a
+          Buyer&rsquo;s bank weeks or months after a payout has already been made.
+        </p>
+        <p>
+          Where a refund or chargeback occurs <strong>after</strong> the corresponding proceeds have
+          already been paid out to you (as a Community organiser or as a Member Seller, see Section
+          13.6), you remain responsible for that amount, and Cobuntu recovers it from you. This applies
+          to the amount returned to the Buyer together with any associated Stripe processing fee and
+          card-network dispute fee allocated to you under Sections 9.5 and 9.6. Recovery works as
+          follows:
+        </p>
+        <ul>
+          <li>
+            The amount is recorded as a <strong>pending payout debit</strong> on your account and
+            automatically netted off your next payout, and subsequent payouts, until it is cleared. It
+            appears as a separate line item on your payout summary so it stays auditable.
+          </li>
+          <li>
+            Where the funds can be pulled back directly from your connected Stripe account, they may be
+            recovered that way instead of, or in addition to, netting future payouts.
+          </li>
+          <li>
+            If your pending and future payouts do not cover the amount, the shortfall is a balance you
+            owe Cobuntu. Your account may show a negative balance until it is settled, and Cobuntu may
+            recover the outstanding amount from your later earnings anywhere on the Platform or by other
+            lawful means. New Sellers may additionally be subject to Stripe&rsquo;s negative-balance
+            recovery on their connected account.
+          </li>
+        </ul>
+        <p>
+          This is the same principle applied to referral commissions in Section 14.5. Cobuntu, as
+          merchant of record for payment processing, does not absorb refunded or charged-back sale
+          proceeds on your behalf; it absorbs only the narrow residual fees described in Section 9.6.
+        </p>
       </section>
 
       <section>
@@ -586,6 +630,7 @@ export function TermsContent() {
         <ul>
           <li>You are the seller of record. Refund requests and chargebacks are between you and your Buyer. Cobuntu may facilitate refunds via the Platform but is not a party to the dispute.</li>
           <li>When a refund or chargeback results in a loss of funds, the Stripe processing fees on that transaction are not returned. Those fees are deducted from your payout or future earnings; they are not absorbed by Cobuntu or by the Community.</li>
+          <li>If a refund or chargeback occurs after you have already been paid the proceeds of a sale, the amount is recovered from you as a post-payout clawback under Section 9.7 (netted off your future payouts, pulled from your connected account, or carried as a balance you owe if neither covers it).</li>
           <li>For chargebacks, Cobuntu provides an automated evidence-package tool you can submit to Stripe. The outcome of any chargeback is determined by the Buyer&rsquo;s bank and card network, not by Cobuntu. Cobuntu cannot guarantee chargeback outcomes.</li>
         </ul>
 
