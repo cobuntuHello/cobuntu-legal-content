@@ -1,5 +1,5 @@
 /**
- * "How it works" — a plain-language explainer of how buying, refunds, payouts,
+ * "Payment &amp; Refund Policy" — a plain-language explainer of how buying, refunds, payouts,
  * and fees work on Cobuntu, for buyers and sellers. Shared from
  * @cobuntu/legal-content and rendered by both apps. This is a friendly summary,
  * not the legal contract; the Terms of Service govern.
@@ -10,7 +10,7 @@
  * too; per-community commission (default 8%); Stripe fees on the seller; EUR10
  * minimum + 30-day floor; 21-day new-seller hold.
  */
-export function HowItWorksContent() {
+export function PaymentRefundPolicyContent() {
   return (
     <div className="prose prose-sm max-w-none space-y-10 leading-relaxed [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mb-3 [&_h2]:mt-8 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:mt-5 [&_h3]:mb-2 [&_p]:opacity-80 [&_li]:opacity-80 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1.5 [&_strong]:font-semibold [&_strong]:opacity-100">
       <section>
