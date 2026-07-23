@@ -1,6 +1,6 @@
 {
   "name": "@cobuntu/legal-content",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Single canonical source for Cobuntu's Terms of Service and Privacy Policy content components, consumed by the community app and the admin app so the two can never diverge.",
   "private": true,
   "main": "./src/index.ts",

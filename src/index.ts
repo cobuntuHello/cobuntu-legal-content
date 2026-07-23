@@ -1,4 +1,5 @@
 export { TermsContent } from "./TermsContent";
+export { HowItWorksContent } from "./HowItWorksContent";
 
 // PrivacyContent is not yet shared: the community app's Privacy embeds an
 // interactive, app-specific "manage cookie preferences" control (wired to that
