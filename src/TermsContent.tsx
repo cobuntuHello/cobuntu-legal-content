@@ -278,6 +278,18 @@ export function TermsContent() {
           organiser may remove profile content that violates these Terms, community rules, or
           applicable law, and may suspend accounts that repeat such violations.
         </p>
+
+        <h3>5.9 Digital Product Download Links</h3>
+        <p>
+          When you buy a digital product, we give you a personal download link to retrieve your
+          files. That link is for your own use as the Buyer. Each file may be downloaded a limited
+          number of times per purchase, a threshold set generously so that ordinary use (downloading
+          to a new device, or re-downloading a file you lost) is not affected. You may not share,
+          publish, resell, or otherwise redistribute your download link or the files it delivers.
+          We may suspend a link that shows signs of sharing or automated access. A refunded purchase
+          disables the link. Nothing here limits the Seller&rsquo;s own responsibility for the
+          content they deliver (see Section 10).
+        </p>
       </section>
 
       <section>
