@@ -1,3 +1,5 @@
 node_modules/
+# also match the bare symlink the agent-worktree helper creates
+node_modules
 *.log
 .DS_Store
