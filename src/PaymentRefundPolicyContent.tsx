@@ -61,8 +61,8 @@ export function PaymentRefundPolicyContent() {
       <section>
         <h2>Getting paid (for sellers)</h2>
         <p>
-          Cobuntu collects the payment and pays you after the refund window closes, through an
-          automatic daily payout. When you are paid depends on what you sold:
+          Cobuntu collects the payment and releases your share after the refund window closes, into
+          your own connected Stripe account. When that release happens depends on what you sold:
         </p>
         <ul>
           <li><strong>Events:</strong> a few days after the event ends (event end plus about 4 days, to cover no-shows).</li>
@@ -75,6 +75,17 @@ export function PaymentRefundPolicyContent() {
           <li><strong>New sellers:</strong> your first payouts are held a bit longer (about 21 days) as fraud protection. This eases to the normal schedule once you verify your identity with Stripe and complete a few clean sales.</li>
           <li><strong>Minimum payout:</strong> a small minimum (about &euro;10) applies. Balances below it add up and are released once they reach the minimum, or after 30 days at the latest.</li>
         </ul>
+        <p>
+          <strong>Getting the money into your bank is a second, separate step, and it is yours to
+          control.</strong> Cobuntu releases your earnings into your own Stripe account. Stripe then
+          transfers that balance to your bank on the payout schedule set on <em>your</em> Stripe
+          account. You own that setting. If it is set to manual, Stripe will hold the balance until
+          you request a payout yourself, and it can sit there indefinitely. Cobuntu does not set,
+          change, or monitor that schedule, and cannot tell you when money reached your bank. Amounts
+          and dates shown in Cobuntu describe the release into your Stripe account, not a bank
+          credit, so they will not line up with your bank statement. Check your Stripe dashboard for
+          bank payout status and to change your schedule.
+        </p>
         <p>
           If a refund or chargeback comes in <strong>after</strong> you have already been paid (a late
           card chargeback, for example), that amount comes back out of your next payouts. If it is more
