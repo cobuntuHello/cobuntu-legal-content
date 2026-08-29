@@ -414,6 +414,11 @@ export function TermsContent() {
         </p>
         <h3>9.1 Event Tickets</h3>
         <ul>
+          <li>
+            <strong>Physical items:</strong> the Buyer may cancel and obtain a full refund within
+            <strong>14 days of receiving the item</strong>. This period runs from delivery, not from
+            purchase, and is in addition to the Buyer&rsquo;s statutory rights where those apply.
+          </li>
           <li><strong>Until the event ends:</strong> a full refund is available on request.</li>
           <li><strong>After the event has ended:</strong> refunds are no longer available (the escrow window has closed).</li>
           <li><strong>Event cancellation by host:</strong> all paid attendees receive an automatic full refund regardless of the timing.</li>
@@ -560,6 +565,19 @@ export function TermsContent() {
           <li>Cobuntu maintains immutable purchase snapshots of digital products at the time of purchase, so Buyers retain perpetual access even if the host later archives or modifies the original product.</li>
           <li>Products with completed sales cannot be permanently deleted; they may be archived (hidden from the marketplace) while preserving Buyer access.</li>
           <li>Hosts must not cancel events without justifiable cause; cancelled events trigger automatic refunds and attendee notifications.</li>
+          <li>
+            <strong>Physical items.</strong> Cobuntu holds no stock and ships nothing. The Seller
+            packs and posts the item themselves, sets the postage price shown to the Buyer at
+            checkout, and must hand the parcel to a carrier within <strong>5 working days</strong> of
+            the sale and record the carrier&rsquo;s tracking number against the order. An order not
+            posted within that period is cancelled automatically and refunded to the Buyer in full,
+            including postage.
+          </li>
+          <li>
+            <strong>Destination.</strong> Physical items may currently be sent only within the
+            country in which the Seller&rsquo;s payment account is registered. The Buyer can enter a
+            delivery address in that country only.
+          </li>
         </ul>
       </section>
 
@@ -582,6 +600,13 @@ export function TermsContent() {
           is the sole mechanism by which funds are released and is designed for transparency:
         </p>
         <ul>
+          <li>
+            <strong>Physical items</strong> are released <strong>30 days after delivery</strong>,
+            reflecting the Buyer&rsquo;s right to cancel running from receipt. Where a carrier
+            reports no delivery, Cobuntu treats the item as delivered approximately fourteen days
+            after despatch and releases funds thirty days after that, so that an absent carrier
+            update cannot withhold a Seller&rsquo;s funds indefinitely.
+          </li>
           <li>The payout sweep runs daily. A sale becomes eligible for payout once its refund window has closed (see Section 9), and eligible funds are picked up by the next daily sweep. No other mechanism releases funds.</li>
           <li><strong>Event settlement buffer:</strong> for event tickets, funds settle a few days after the event ends (currently the event end date plus 4 days) to allow for no-shows and dispute or chargeback exposure, and are then released on the next daily sweep.</li>
           <li><strong>New-seller hold:</strong> to protect Buyers against fraud and chargebacks, a Member Seller&rsquo;s payouts are held for an additional buffer when they first start selling, currently 21 days from each sale. This eases to the standard payout timing once the Seller has verified their identity with Stripe and completed a few clean sales. Established Community sellers are not subject to this hold.</li>

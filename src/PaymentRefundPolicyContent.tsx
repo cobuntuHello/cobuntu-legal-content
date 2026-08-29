@@ -27,7 +27,8 @@ export function PaymentRefundPolicyContent() {
           When you buy something, Cobuntu holds your payment safely during a refund window instead
           of handing it straight to the seller. If you are entitled to a refund, it happens quickly.
           Once the window closes, the seller is paid automatically. This protects buyers and sellers
-          alike.
+          alike. For anything posted to you, that window starts when the parcel arrives rather than
+          when you paid.
         </p>
       </section>
 
@@ -47,6 +48,12 @@ export function PaymentRefundPolicyContent() {
         <ul>
           <li><strong>Event tickets:</strong> full refund any time <strong>until the event ends</strong>.</li>
           <li><strong>Digital products:</strong> full refund <strong>within 14 days</strong> of purchase.</li>
+          <li>
+            <strong>Physical items (posted to you):</strong> full refund <strong>within 14 days of the
+            item arriving</strong>, not 14 days from when you paid. If the seller does not post it
+            within 5 working days, the order is cancelled and refunded in full automatically,
+            postage included, without you having to ask.
+          </li>
           <li><strong>Memberships:</strong> full refund <strong>within 7 days</strong> of your first payment. Renewals are not refundable, but you can cancel any time to stop future charges and keep access until the period you already paid for ends.</li>
           <li><strong>Recurring product subscriptions:</strong> the first charge follows the 14-day product rule; renewals are not refundable (cancel any time to stop billing).</li>
           <li><strong>Donations / tips:</strong> not refundable on their own, but refunded if the whole purchase is refunded.</li>
@@ -67,6 +74,13 @@ export function PaymentRefundPolicyContent() {
         <ul>
           <li><strong>Events:</strong> a few days after the event ends (event end plus about 4 days, to cover no-shows).</li>
           <li><strong>Digital products:</strong> about 14 days after the sale.</li>
+          <li>
+            <strong>Physical items:</strong> 30 days after the item is delivered, not after the sale.
+            The buyer&rsquo;s right to change their mind starts when the parcel arrives, so the money
+            is held until that has run out. If the carrier never reports a delivery, we treat the
+            item as delivered about two weeks after you posted it and start the 30 days from there,
+            so a quiet carrier cannot hold your money indefinitely.
+          </li>
           <li><strong>Memberships:</strong> the first charge after 7 days; renewals right away.</li>
           <li><strong>Recurring product subscriptions:</strong> the first charge after about 14 days; renewals right away.</li>
         </ul>
@@ -92,6 +106,35 @@ export function PaymentRefundPolicyContent() {
           than your upcoming payouts cover, it becomes a balance you owe until it is settled. The holds
           above are there to make this rare, but a bank chargeback can still arrive months later.
         </p>
+      </section>
+
+      <section>
+        <h2>Posting physical items (for sellers)</h2>
+        <p>
+          Cobuntu does not hold stock. You pack the item and post it yourself, and you set the
+          postage price on the listing, which the buyer pays on top of the item price. We never
+          take a commission on postage.
+        </p>
+        <ul>
+          <li>
+            <strong>You have 5 working days to post it.</strong> After that the order is cancelled
+            and the buyer is refunded in full, automatically. We email you when the sale happens and
+            again when the deadline is close.
+          </li>
+          <li>
+            <strong>Add the tracking number</strong> to the order once you have posted it. It is how
+            the buyer follows the parcel, and how we know it arrived, which is what starts the clock
+            on paying you.
+          </li>
+          <li>
+            <strong>You post within your own country</strong> for now. The buyer can only enter a
+            delivery address in the country your account is registered in.
+          </li>
+          <li>
+            If you can no longer send an item, refund the buyer from the order rather than letting
+            the deadline pass.
+          </li>
+        </ul>
       </section>
 
       <section>
