@@ -54,7 +54,7 @@ export function PaymentRefundPolicyContent() {
             within 5 working days, the order is cancelled and refunded in full automatically,
             postage included, without you having to ask.
           </li>
-          <li><strong>Memberships:</strong> full refund <strong>within 7 days</strong> of your first payment. Renewals are not refundable, but you can cancel any time to stop future charges and keep access until the period you already paid for ends.</li>
+          <li><strong>Memberships:</strong> full refund <strong>within 14 days</strong> of your first payment. Renewals are not refundable, but you can cancel any time to stop future charges and keep access until the period you already paid for ends.</li>
           <li><strong>Recurring product subscriptions:</strong> the first charge follows the 14-day product rule; renewals are not refundable (cancel any time to stop billing).</li>
           <li><strong>Donations / tips:</strong> not refundable on their own, but refunded if the whole purchase is refunded.</li>
         </ul>
@@ -81,7 +81,7 @@ export function PaymentRefundPolicyContent() {
             item as delivered about two weeks after you posted it and start the 30 days from there,
             so a quiet carrier cannot hold your money indefinitely.
           </li>
-          <li><strong>Memberships:</strong> the first charge after 7 days; renewals right away.</li>
+          <li><strong>Memberships:</strong> the first charge after 14 days; renewals right away.</li>
           <li><strong>Recurring product subscriptions:</strong> the first charge after about 14 days; renewals right away.</li>
         </ul>
         <p>Two things that can affect the exact timing:</p>
