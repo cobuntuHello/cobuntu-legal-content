@@ -429,7 +429,7 @@ export function TermsContent() {
         <ul>
           <li><strong>Digital products, within 14 days of purchase:</strong> a full refund is available on request.</li>
           <li><strong>Digital products, after 14 days:</strong> refunds are no longer available.</li>
-          <li><strong>Community memberships, first charge:</strong> a full refund is available within 7 days of your first membership payment (a &ldquo;didn&rsquo;t like it&rdquo; window). After 7 days, and on all renewals, memberships are not self-refundable.</li>
+          <li><strong>Community memberships, first charge:</strong> a full refund is available within 14 days of your first membership payment. After 14 days, and on all renewals, memberships are not self-refundable. Where you are a consumer in the EU or the UK, this period is your statutory right to withdraw from a distance contract, and we apply it as a full refund rather than charging you for the part of the period you have already used.</li>
           <li><strong>Recurring subscriptions and renewals:</strong> no refunds for past billing periods. On cancellation, you retain access until the end of the current period and are not billed again.</li>
         </ul>
         <h3>9.3 How Refunds Work</h3>
