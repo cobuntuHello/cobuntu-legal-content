@@ -50,9 +50,12 @@ export function PaymentRefundPolicyContent() {
           <li><strong>Digital products:</strong> full refund <strong>within 14 days</strong> of purchase.</li>
           <li>
             <strong>Physical items (posted to you):</strong> full refund <strong>within 14 days of the
-            item arriving</strong>, not 14 days from when you paid. If the seller does not post it
-            within 5 working days, the order is cancelled and refunded in full automatically,
-            postage included, without you having to ask.
+            item arriving</strong>, not 14 days from when you paid. You send the item back at your
+            own cost, and the money returns once the seller confirms it reached them; if they say
+            nothing for 14 days after you post it, we refund you anyway. If the item was faulty or
+            not as described, the return is not at your cost. If the seller does not post the order
+            in the first place within 5 working days, it is cancelled and refunded in full
+            automatically, postage included, without you having to ask.
           </li>
           <li><strong>Memberships:</strong> full refund <strong>within 14 days</strong> of your first payment. Renewals are not refundable, but you can cancel any time to stop future charges and keep access until the period you already paid for ends.</li>
           <li><strong>Recurring product subscriptions:</strong> the first charge follows the 14-day product rule; renewals are not refundable (cancel any time to stop billing).</li>

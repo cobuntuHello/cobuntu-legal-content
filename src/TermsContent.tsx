@@ -432,6 +432,11 @@ export function TermsContent() {
           <li><strong>Community memberships, first charge:</strong> a full refund is available within 14 days of your first membership payment. After 14 days, and on all renewals, memberships are not self-refundable. Where you are a consumer in the EU or the UK, this period is your statutory right to withdraw from a distance contract, and we apply it as a full refund rather than charging you for the part of the period you have already used.</li>
           <li><strong>Recurring subscriptions and renewals:</strong> no refunds for past billing periods. On cancellation, you retain access until the end of the current period and are not billed again.</li>
         </ul>
+        <p>
+          Physical items are different in kind, because the item has to come back before the money
+          can go forward. Their window runs from delivery rather than from purchase, and both the
+          window and the return itself are set out in Section 9.8.
+        </p>
         <h3>9.3 How Refunds Work</h3>
         <ul>
           <li>You request a refund from the event detail page (for tickets) or your purchase library (for products).</li>
@@ -555,6 +560,44 @@ export function TermsContent() {
           merchant of record for payment processing, does not absorb refunded or charged-back sale
           proceeds on your behalf; it absorbs only the narrow residual fees described in Section 9.6.
         </p>
+
+        <h3>9.8 Physical Items: Returns</h3>
+        <p>
+          This Section applies to items posted to you, and states the return right that Section 12
+          already relies on when it holds a Seller&rsquo;s funds for thirty days from delivery.
+        </p>
+        <ul>
+          <li>
+            <strong>Within 14 days of delivery</strong> you may change your mind, for any reason,
+            and open a return from your purchase library. The period runs from the day you, or
+            someone you nominate, take physical possession of the item, not from the day you paid.
+          </li>
+          <li>
+            <strong>You arrange and pay for return postage.</strong> Where mandatory consumer law
+            places that cost on the Seller instead, for example where the item is faulty, damaged
+            in transit, or not as described, that law prevails and you are not out of pocket (see
+            Section 25.1).
+          </li>
+          <li>
+            <strong>The refund is issued once the Seller confirms the item has come back.</strong>
+            The item travels first and the money follows. Sellers here are frequently private
+            individuals rather than businesses, and this ordering is what stops a Seller being left
+            with neither the item nor the payment.
+          </li>
+          <li>
+            <strong>Neither side can strand the other by going quiet.</strong> A Seller who has
+            neither accepted nor rejected a return within <strong>5 days</strong> is treated as
+            having accepted it. A Buyer who has not posted the item back within{" "}
+            <strong>14 days</strong> of acceptance lets the return lapse. A Seller who has not
+            confirmed receipt within <strong>14 days</strong> of the item being posted back no
+            longer holds up the refund, and Cobuntu issues it regardless.
+          </li>
+          <li>
+            <strong>If the order is never posted at all,</strong> it is cancelled and refunded in
+            full, including the postage you paid, without you having to ask. See Section 10 for the
+            dispatch deadline this enforces.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -1033,15 +1076,24 @@ export function TermsContent() {
           these Terms conflicts with such mandatory law, that law prevails and the provision is modified
           only to the minimum extent necessary to comply.
         </p>
-        <h3>25.2 Right of Withdrawal for Digital Content and Services</h3>
+        <h3>25.2 Right of Withdrawal</h3>
         <p>
           EU and UK consumers may have a statutory right to withdraw from certain purchases within 14
-          days. For digital content supplied immediately and for services that begin during the
-          withdrawal period, you may be asked to expressly consent to immediate performance and to
-          acknowledge that you thereby lose the right of withdrawal once performance has begun; where
-          the law provides otherwise, the statutory right prevails. The refund windows in Section 9 are
-          contractual protections offered in addition to, and do not replace, any mandatory statutory
-          rights.
+          days.
+        </p>
+        <p>
+          For <strong>physical goods</strong>, that period runs from the day you, or someone you
+          nominate, take physical possession of the item. Section 9.8 sets out how to exercise the
+          equivalent return on the Platform, what the deadlines are on each side, and who bears the
+          cost of sending the item back.
+        </p>
+        <p>
+          For <strong>digital content</strong> supplied immediately and for services that begin
+          during the withdrawal period, you may be asked to expressly consent to immediate
+          performance and to acknowledge that you thereby lose the right of withdrawal once
+          performance has begun; where the law provides otherwise, the statutory right prevails. The
+          refund windows in Section 9 are contractual protections offered in addition to, and do not
+          replace, any mandatory statutory rights.
         </p>
         <h3>25.3 Data-Protection Rights</h3>
         <p>
