@@ -419,7 +419,7 @@ export function TermsContent() {
             <strong>14 days of receiving the item</strong>. This period runs from delivery, not from
             purchase, and is in addition to the Buyer&rsquo;s statutory rights where those apply.
           </li>
-          <li><strong>Until the event ends:</strong> a full refund is available on request.</li>
+          <li><strong>Until the event ends:</strong> a refund is available on request, in full unless the host publishes a cancellation schedule for that event (Section 9.9).</li>
           <li><strong>After the event has ended:</strong> refunds are no longer available (the escrow window has closed).</li>
           <li><strong>Event cancellation by host:</strong> all paid attendees receive an automatic full refund regardless of the timing.</li>
           <li><strong>Conversion from free to paid:</strong> not allowed once attendees have registered. Existing free attendees are not auto-converted to paid attendees.</li>
@@ -443,9 +443,9 @@ export function TermsContent() {
           <li>If the request falls within the escrow window, the refund is processed automatically and immediately.</li>
           <li>Funds appear on your original payment method within five to ten business days, depending on your bank.</li>
           <li>You receive an email confirmation when the refund is processed.</li>
-          <li>All buyer-initiated refunds are full refunds; partial refunds are not supported. The one exception is the prorated refund of the unused portion of a membership&rsquo;s current billing period on involuntary removal (kick or ban), described in Section 5.7.</li>
+          <li>A refund is for the full amount you paid, unless the seller publishes a cancellation schedule for that listing (see Section 9.9). Two further exceptions are set out elsewhere in these Terms: the prorated refund of the unused portion of a membership&rsquo;s current billing period on involuntary removal (kick or ban), described in Section 5.7, and returns of physical items, described in Section 9.8.</li>
           <li>The Community host (or their designated team) can also issue a refund on your behalf when they have approved it for service-related reasons; you will receive the same confirmation email regardless of whether you or the host triggered the refund.</li>
-          <li>For member-listed sales, the Member Seller can likewise refund their own Buyers directly from their sales ledger, within the same escrow window and on the same full-refund basis. The Member Seller bears the Stripe processing fee on any refund they issue (see Section 9.6).</li>
+          <li>For member-listed sales, the Member Seller can likewise refund their own Buyers directly from their sales ledger, within the same escrow window and on the same basis, including any cancellation schedule they publish. The Member Seller bears the Stripe processing fee on any refund they issue (see Section 9.6).</li>
         </ul>
         <h3>9.4 Refund Window Indicator</h3>
         <p>
@@ -598,6 +598,32 @@ export function TermsContent() {
             dispatch deadline this enforces.
           </li>
         </ul>
+
+        <h3>9.9 Cancellation Schedules</h3>
+        <p>
+          Some listings carry a cancellation schedule: the seller publishes, in advance, how much of
+          what you paid comes back depending on how late you cancel. A room hire might return 75% if
+          you cancel more than fourteen days ahead, 50% inside fourteen days, and nothing inside
+          seven. Where a schedule applies, it is shown on the listing before you pay and again on
+          your purchase, and it replaces the full-refund default in Section 9.3 for that listing.
+        </p>
+        <p>
+          A schedule only ever reduces what a cancelling buyer receives. It does not change who may
+          refund or by when, which remain as set out in Sections 9.1, 9.2 and 9.4, and it does not
+          apply at all when the seller is the one who cancels: if a seller cancels an event or a
+          booking, you are refunded in full regardless of any schedule they publish.
+        </p>
+        <p>
+          The percentage is applied to the amount you paid, and that is the amount you receive. Where
+          the figure does not divide into whole cents, it is rounded down to the nearest cent. The
+          seller bears the Stripe processing fee on the part that is refunded, on the same basis as
+          Section 9.6.
+        </p>
+        <p>
+          Listings without a published schedule are refunded in full under Section 9.3. Nothing in
+          this Section limits the statutory rights described in Section 25; where a mandatory
+          consumer right gives you more than a schedule does, the mandatory right applies.
+        </p>
       </section>
 
       <section>
