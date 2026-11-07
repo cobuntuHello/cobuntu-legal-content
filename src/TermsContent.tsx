@@ -857,52 +857,59 @@ export function TermsContent() {
           Cobuntu is not your tax adviser. If you are unsure of your obligations, seek professional
           advice.
         </p>
-        <h3>15.2 VAT on Seller Sales (Current, Seller-Side Mechanism)</h3>
+        <h3>15.2 VAT on Your Sales</h3>
         <p>
           If you are VAT-registered, you may record your VAT registration (number and country) in your
-          Cobuntu seller settings. Cobuntu applies a conservative, domestic-only approach designed
-          never to misprice VAT: it adds VAT to your sale only where it can determine the correct
-          treatment, and otherwise adds none, and always shows your VAT number on the Buyer&rsquo;s
-          receipt where VAT is charged. Specifically:
+          Cobuntu seller settings and set a VAT rate on what you sell, as described in Sections 15.2A
+          and 15.2B. You choose the rate and are responsible for it being correct.
         </p>
-        <ul>
-          <li><strong>Buyer in your country:</strong> Cobuntu charges your standard domestic VAT rate on your sale and collects that VAT on your behalf.</li>
-          <li><strong>VAT-registered business buyer elsewhere in the EU:</strong> where the Buyer provides a valid EU VAT identification number for an EU country other than yours, the sale is treated as a zero-rated intra-EU business-to-business supply (reverse charge), and no VAT is added.</li>
-          <li><strong>All other cases</strong> (the Buyer&rsquo;s country is unknown, a cross-border sale to a consumer, or a Buyer outside the EU): no VAT is added, and you remain responsible for accounting for any VAT or other tax due.</li>
-        </ul>
         <p>
-          No VAT is currently added to recurring subscriptions and memberships, and you remain
-          responsible for accounting for any VAT due on them. You are responsible for the accuracy of
-          your VAT registration details and for reporting and remitting VAT to the relevant
-          authorities.
+          Prices are entered and shown on the Platform before VAT. The VAT is worked out at checkout and
+          added on top, where the Buyer sees it as a separate line before paying. You are the supplier
+          and you owe the VAT to your tax authority. Cobuntu collects it from the Buyer on your behalf,
+          pays it to you in your payout, and shows it separately on the Buyer&rsquo;s receipt and on your
+          payout documents. Cobuntu does not declare or pay it for you.
+        </p>
+        <p>
+          Commission and platform fees are calculated on the price before VAT. Payment processing fees
+          apply to the full amount charged, including VAT.
+        </p>
+        <p>
+          If, at checkout, you are no longer VAT-registered or VAT can no longer be charged on an item,
+          no VAT is added and the Buyer pays the price shown. When an item with VAT is refunded, the VAT
+          is refunded with it, in proportion to the amount refunded; the Buyer receives a credit note
+          that shows the VAT reversed, and the refunded VAT is not paid to you.
+        </p>
+        <p>
+          VAT is not currently available on recurring subscriptions, memberships, instalment plans or
+          items sent by post, and you remain responsible for accounting for any VAT due on them. You
+          are responsible for the accuracy of your VAT registration details and for reporting and
+          remitting VAT to the relevant authorities.
         </p>
         <h3>15.2A VAT on Event Tickets</h3>
         <p>
-          If you are VAT-registered and your event takes place in a country where the Platform offers
-          VAT, you may set a VAT rate on a ticket. You choose the rate and are responsible for it
-          being correct. VAT on admission is charged where the event takes place.
+          VAT on admission to an event is charged where the event takes place, whoever the Buyer is.
+          You may set a VAT rate on a ticket when you are VAT-registered in the country where your
+          event takes place and the Platform offers VAT there.
         </p>
+        <h3>15.2B VAT on Products and Courses</h3>
         <p>
-          Ticket prices are shown on the Platform before VAT, and the VAT is added at checkout, where
-          the Buyer sees it as a separate line before paying. You are the supplier of the ticket and
-          you owe the VAT to your tax authority. Cobuntu collects it from the Buyer on your behalf as part of
-          the ticket price, pays it to you in your payout, and shows it separately on the
-          Buyer&rsquo;s receipt and on your payout documents. Cobuntu does not declare or pay it for
-          you.
+          You may set a VAT rate on a product or course when you are VAT-registered in a country where
+          the Platform offers VAT and you have confirmed in your VAT details that your sales to
+          consumers in other EU countries are under EUR 10,000 a year. Under that threshold, EU rules
+          let you charge your own country&rsquo;s VAT to consumers anywhere in the EU. Accordingly, at
+          checkout:
         </p>
+        <ul>
+          <li><strong>A Buyer in the EU</strong> is charged your country&rsquo;s VAT at the rate you set.</li>
+          <li><strong>A VAT-registered business Buyer in another EU country</strong> that provides a valid VAT identification number is charged no VAT, and the receipt states the reverse charge.</li>
+          <li><strong>A Buyer outside the EU</strong> is charged no EU VAT.</li>
+        </ul>
         <p>
-          Commission and platform fees are calculated on the price before VAT. Payment processing
-          fees apply to the full amount charged, including VAT.
-        </p>
-        <p>
-          If you are no longer VAT-registered at the time of a sale, or VAT can no longer be charged
-          for that event, the Buyer pays the total shown at checkout and no VAT is recorded on the
-          sale. You are responsible for keeping your VAT details accurate.
-        </p>
-        <p>
-          When a ticket with VAT is refunded, the VAT is refunded with it, in proportion to the amount
-          refunded. The Buyer receives a credit note that shows the VAT reversed, and the refunded
-          VAT is not paid to you.
+          The Buyer states their country at checkout. You must withdraw your confirmation as soon as your
+          sales to consumers in other EU countries exceed the threshold. The Platform does not yet
+          support the EU One-Stop Shop, and above the threshold you are responsible for accounting for
+          VAT where each Buyer is.
         </p>
         <h3>15.3 VAT on Cobuntu&rsquo;s Own Fees (Upon VAT Registration)</h3>
         <p>
