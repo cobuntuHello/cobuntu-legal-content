@@ -14,9 +14,11 @@
  * (Section 15.3) activates once VAT-registered under [VAT NUMBER]; the liability
  * cap (Section 21.2) and the consumer savings clause (Section 25) should all be
  * confirmed by local counsel against the chosen jurisdiction. COUNSEL should also
- * confirm the "merchant of record" characterisation (Sections 1.2, 5.6, 8): Cobuntu
- * collects payment via Stripe Connect Standard with the Seller named on the receipt,
- * which reads as a payment-facilitator / disclosed-agent model; and EU VAT
+ * confirm the payment-collection characterisation (Sections 1.2, 5.6, 8), which replaced
+ * "merchant of record" on 2026-11-07 without counsel review: the charge still settles to
+ * Cobuntu's Stripe account, with the Seller named on the receipt, which reads as a
+ * payment-facilitator / disclosed-agent model. COUNSEL should also confirm whether
+ * holding funds for Sellers raises a payment-services licensing question; and EU VAT
  * deemed-supplier rules (Implementing Reg. Art. 9a / 14a) may require accounting for
  * VAT on the full sale rather than on Cobuntu's commission only (Sections 15.2/15.3).
  * COUNSEL should also confirm the post-payout recovery / clawback clause (Section 9.7):
@@ -26,7 +28,7 @@
  *
  * Scope (intentional omissions, business reasons):
  * - Premium subscriptions are not described (feature on hold).
- * - Cobuntu is the merchant of record (platform-collect): funds are collected by
+ * - Cobuntu collects payment on the Seller's behalf (platform-collect): funds are collected by
  *   Cobuntu, held in escrow, then the Seller's net is paid out by the daily payout
  *   sweep once the sale's refund window has closed. Commission is negotiated per
  *   community and configurable per category (memberships / products / events),
@@ -48,7 +50,7 @@ export function TermsContent() {
           cobuntu.com together with its related community and marketplace surfaces (the
           &ldquo;Platform&rdquo;). Cobuntu is a white-label community platform that lets community
           operators host their members, sell digital products, run events, and manage payments under
-          their own brand. For payments, Cobuntu acts as the merchant of record (see Section 8).
+          their own brand. For payments, Cobuntu collects payment on the Seller&rsquo;s behalf (see Section 8).
         </p>
         <p>
           The bracketed particulars above are completed on Cobuntu&rsquo;s incorporation and VAT
@@ -68,7 +70,7 @@ export function TermsContent() {
           <li><strong>Member Seller</strong>: a member whom a Community permits to list their own products or events in that Community&rsquo;s marketplace (see Section 13).</li>
           <li><strong>Buyer</strong>: any person who purchases, or attempts to purchase, goods or services through the Platform, including guest purchasers.</li>
           <li><strong>Content</strong>: listings, profile content, messages, images, links, and other materials submitted to the Platform.</li>
-          <li><strong>Merchant of record</strong>: Cobuntu&rsquo;s role as the party that collects Buyer payments through Stripe Connect (platform-collect), holds them in escrow, and settles each Seller&rsquo;s net proceeds through the daily payout sweep.</li>
+          <li><strong>Payment collection</strong>: Cobuntu&rsquo;s role in collecting Buyer payments through Stripe Connect (platform-collect) on the Seller&rsquo;s behalf, holding them in escrow, and settles each Seller&rsquo;s net proceeds through the daily payout sweep.</li>
         </ul>
       </section>
 
@@ -227,8 +229,9 @@ export function TermsContent() {
             mandatory statutory right applies to you as a consumer (see Section 25).
           </li>
           <li>
-            <strong>Cobuntu is the merchant of record and processes the recurring payments via
-            Stripe; the Community organiser is the seller of the product or service.</strong>
+            <strong>Cobuntu processes the recurring payments via Stripe on the Community
+            organiser&rsquo;s behalf; the Community organiser is the seller of the product or
+            service.</strong>
             Refunds, disputes, and tax obligations are between you and the Community organiser.
             Cobuntu facilitates payment via Stripe Connect.
           </li>
@@ -364,7 +367,7 @@ export function TermsContent() {
         <p>
           Payments on Cobuntu are processed by Stripe. Each Seller (a Community or a Member Seller)
           connects their own Stripe account (Stripe Connect, Standard). When a Buyer pays, Cobuntu
-          collects the funds into its platform account as the merchant of record and holds them in
+          collects the funds into its platform account on the Seller&rsquo;s behalf and holds them in
           escrow until the applicable window closes (see Section 9), then transfers the Seller&rsquo;s
           net share to their connected Stripe account via the daily payout sweep (see Section 12).
           Cobuntu holds these funds only to settle the sale and only for the escrow period before
@@ -556,8 +559,8 @@ export function TermsContent() {
           </li>
         </ul>
         <p>
-          This is the same principle applied to referral commissions in Section 14.5. Cobuntu, as
-          merchant of record for payment processing, does not absorb refunded or charged-back sale
+          This is the same principle applied to referral commissions in Section 14.5. Cobuntu, as the
+          party collecting payment, does not absorb refunded or charged-back sale
           proceeds on your behalf; it absorbs only the narrow residual fees described in Section 9.6.
         </p>
 
@@ -760,8 +763,8 @@ export function TermsContent() {
         <h3>13.9 Receipts and Seller of Record</h3>
         <p>
           The receipt your Buyer receives identifies you (using the legal or business name on your
-          Stripe Connect account) as the seller of the goods or services. Cobuntu is the merchant of
-          record for payment processing; the host Community is identified as the marketplace curator.
+          Stripe Connect account) as the seller of the goods or services. Cobuntu collects the payment
+          on your behalf; the host Community is identified as the marketplace curator.
           None of this makes Cobuntu or the Community a party to your underlying sale.
         </p>
       </section>
@@ -868,15 +871,37 @@ export function TermsContent() {
           <li><strong>All other cases</strong> (the Buyer&rsquo;s country is unknown, a cross-border sale to a consumer, or a Buyer outside the EU): no VAT is added, and you remain responsible for accounting for any VAT or other tax due.</li>
         </ul>
         <p>
-          Recurring subscriptions and memberships defer to Stripe Tax, which determines applicable tax
-          based on the Buyer&rsquo;s jurisdiction at checkout. You are responsible for the accuracy of
+          No VAT is currently added to recurring subscriptions and memberships, and you remain
+          responsible for accounting for any VAT due on them. You are responsible for the accuracy of
           your VAT registration details and for reporting and remitting VAT to the relevant
           authorities.
+        </p>
+        <h3>15.2A VAT on Event Tickets</h3>
+        <p>
+          If you are VAT-registered and your event takes place in a country where the Platform offers
+          VAT, you may set a VAT rate on a ticket. You choose the rate and are responsible for it
+          being correct. VAT on admission is charged where the event takes place.
+        </p>
+        <p>
+          The price shown to Buyers includes that VAT. You are the supplier of the ticket and you owe
+          the VAT to your tax authority. Cobuntu collects it from the Buyer on your behalf as part of
+          the ticket price, pays it to you in your payout, and shows it separately on the
+          Buyer&rsquo;s receipt and on your payout documents. Cobuntu does not declare or pay it for
+          you.
+        </p>
+        <p>
+          Commission and platform fees are calculated on the price before VAT. Payment processing
+          fees apply to the full amount charged, including VAT.
+        </p>
+        <p>
+          If you are no longer VAT-registered at the time of a sale, or VAT can no longer be charged
+          for that event, the Buyer pays the price shown and no VAT is recorded on the sale. You are
+          responsible for keeping your VAT details accurate.
         </p>
         <h3>15.3 VAT on Cobuntu&rsquo;s Own Fees (Upon VAT Registration)</h3>
         <p>
           Cobuntu is incorporating and registering for VAT. Once registered under [VAT NUMBER],
-          Cobuntu, as merchant of record, will charge and remit VAT on <strong>its own commission and
+          Cobuntu will charge and remit VAT on <strong>its own commission and
           platform fees</strong> where required by law. This VAT applies to Cobuntu&rsquo;s fees only.
           It does not change the treatment of your underlying sale to your Buyer, for which you remain
           responsible under Section 15.2. Donations remain outside VAT (see Section 5.3).
@@ -973,7 +998,7 @@ export function TermsContent() {
           corrected.
         </p>
         <p>
-          Cobuntu is a platform facilitator and the merchant of record for payment processing only. It
+          Cobuntu is a platform facilitator that collects payment on the Seller&rsquo;s behalf. It
           does not sell, produce, or control the goods, services, or events offered by Sellers, and
           gives no warranty as to their quality, safety, legality, or fitness, or as to the accuracy of
           Seller-provided content. Product quality, event execution, and customer support are the
@@ -1025,7 +1050,7 @@ export function TermsContent() {
         <p>
           Nothing in these Terms excludes or limits Cobuntu&rsquo;s liability for death or personal
           injury caused by its negligence, for fraud or fraudulent misrepresentation, for any
-          liability arising under the merchant-of-record duty to remit funds held for you, or for any
+          liability arising under Cobuntu&rsquo;s duty to remit funds it holds for you, or for any
           liability that cannot be excluded or limited under applicable law. Where a liability cannot
           be excluded but can be limited, it is limited to the maximum extent permitted.
         </p>
