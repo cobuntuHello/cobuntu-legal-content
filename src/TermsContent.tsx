@@ -883,8 +883,9 @@ export function TermsContent() {
           being correct. VAT on admission is charged where the event takes place.
         </p>
         <p>
-          The price shown to Buyers includes that VAT. You are the supplier of the ticket and you owe
-          the VAT to your tax authority. Cobuntu collects it from the Buyer on your behalf as part of
+          Ticket prices are shown on the Platform before VAT, and the VAT is added at checkout, where
+          the Buyer sees it as a separate line before paying. You are the supplier of the ticket and
+          you owe the VAT to your tax authority. Cobuntu collects it from the Buyer on your behalf as part of
           the ticket price, pays it to you in your payout, and shows it separately on the
           Buyer&rsquo;s receipt and on your payout documents. Cobuntu does not declare or pay it for
           you.
@@ -895,8 +896,13 @@ export function TermsContent() {
         </p>
         <p>
           If you are no longer VAT-registered at the time of a sale, or VAT can no longer be charged
-          for that event, the Buyer pays the price shown and no VAT is recorded on the sale. You are
-          responsible for keeping your VAT details accurate.
+          for that event, the Buyer pays the total shown at checkout and no VAT is recorded on the
+          sale. You are responsible for keeping your VAT details accurate.
+        </p>
+        <p>
+          When a ticket with VAT is refunded, the VAT is refunded with it, in proportion to the amount
+          refunded. The Buyer receives a credit note that shows the VAT reversed, and the refunded
+          VAT is not paid to you.
         </p>
         <h3>15.3 VAT on Cobuntu&rsquo;s Own Fees (Upon VAT Registration)</h3>
         <p>
