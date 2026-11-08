@@ -190,7 +190,10 @@ export function TermsContent() {
           rate on the donation. The Seller receives the remainder. Cobuntu takes no platform fee and
           no share of the Community&rsquo;s commission on donations. Donations are voluntary gifts
           for which the donor receives nothing in return and are treated as outside the scope of
-          VAT; they appear on the receipt as a separate line.
+          VAT; they appear on the receipt as a separate line. Because German VAT treats a voluntary
+          payment to a VAT-registered business as part of the price of its service, donations are
+          not available to a Seller while they are VAT-registered in Germany. Donations are income
+          of the Seller, who remains responsible for any income tax on them.
         </p>
         <p>
           <strong>Refunds.</strong> If a purchase that included a donation is refunded, the donation
