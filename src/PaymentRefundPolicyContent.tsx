@@ -59,7 +59,7 @@ export function PaymentRefundPolicyContent() {
           </li>
           <li><strong>Memberships:</strong> full refund <strong>within 14 days</strong> of your first payment. Renewals are not refundable, but you can cancel any time to stop future charges and keep access until the period you already paid for ends.</li>
           <li><strong>Recurring product subscriptions:</strong> the first charge follows the 14-day product rule; renewals are not refundable (cancel any time to stop billing).</li>
-          <li><strong>Donations / tips:</strong> not refundable on their own, but refunded if the whole purchase is refunded.</li>
+          <li><strong>Donations / tips:</strong> refunded together with the purchase they came with, in the same proportion (a full refund returns the whole donation). A donation given on its own can be refunded by the seller.</li>
         </ul>
         <p>
           If you dispute a charge with your bank instead of using the refund flow (a
@@ -145,7 +145,7 @@ export function PaymentRefundPolicyContent() {
         <ul>
           <li><strong>Card processing (Stripe):</strong> a small fee per transaction (around 2.9% plus a fixed amount), paid by the seller.</li>
           <li><strong>Cobuntu&rsquo;s commission:</strong> set per community (a default applies if none is configured). When a member sells inside a community, the member pays no platform fee, Cobuntu&rsquo;s share comes out of the community&rsquo;s commission.</li>
-          <li><strong>Donations / tips</strong> carry no commission or platform fee, they go to the seller minus only the card processing fee.</li>
+          <li><strong>Donations / tips</strong> carry no platform fee. The community that lists the item takes its usual commission rate on them, the card processing fee comes out of the donation, and the seller receives the rest.</li>
         </ul>
       </section>
 

@@ -173,16 +173,31 @@ export function TermsContent() {
         <h3>5.3 Donations</h3>
         <p>
           Any event or product may enable optional donations: a &ldquo;tip&rdquo; a Buyer may add on
-          top at checkout, or give on its own for a free item. Donations may be a fixed amount or
-          Buyer-chosen, with an optional minimum. Donations are not refundable on their own once
-          paid; if the entire purchase is refunded, the donation is refunded with it.
+          top at checkout, a donation given when registering for a free event, or a donation given
+          on its own. Donations may be a fixed amount or Buyer-chosen, with an optional minimum.
         </p>
         <p>
-          Donations are <strong>not subject to platform fees, community commission, or VAT</strong>.
-          The full donation goes to the Seller as a separate line, less only Stripe&rsquo;s
-          percentage processing fee (currently approximately 2.9%) on the donation amount. Cobuntu
-          absorbs the small fixed per-transaction component on tips (for example, approximately
-          &euro;0.30) and takes nothing else from donations.
+          <strong>Donations to an event are for its attendees.</strong> A donation given on its own
+          to an event is accepted only from someone who holds a confirmed place at that event (under
+          their account, or under the email address the place was booked with), and, once the event
+          has ended, only during the 30 days that follow it. Donations to a product are open to
+          anyone.
+        </p>
+        <p>
+          <strong>How a donation is split.</strong> Stripe&rsquo;s actual processing fee on the
+          donation is deducted from the donation. Where the item is listed through a Community that
+          takes a commission on that item&rsquo;s sales, that Community receives the same commission
+          rate on the donation. The Seller receives the remainder. Cobuntu takes no platform fee and
+          no share of the Community&rsquo;s commission on donations. Donations are voluntary gifts
+          for which the donor receives nothing in return and are treated as outside the scope of
+          VAT; they appear on the receipt as a separate line.
+        </p>
+        <p>
+          <strong>Refunds.</strong> If a purchase that included a donation is refunded, the donation
+          is refunded with it in the same proportion as the purchase (a full refund returns the whole
+          donation; a partial refund returns the same share of it), and the Community&rsquo;s
+          commission on the donation is reversed accordingly. A donation given on its own may be
+          refunded by the Seller.
         </p>
         <h3>5.4 Currency</h3>
         <p>
@@ -292,6 +307,30 @@ export function TermsContent() {
           We may suspend a link that shows signs of sharing or automated access. A refunded purchase
           disables the link. Nothing here limits the Seller&rsquo;s own responsibility for the
           content they deliver (see Section 10).
+        </p>
+      
+        <h3>5.10 Event Reviews</h3>
+        <p>
+          After an event ends, people who held a confirmed place at it may review it (a rating from
+          one to five stars and an optional comment) for 30 days. Hosts and co-hosts cannot review
+          their own events. A Buyer without an account may review through a personal link sent to
+          the email address the place was booked with; that link works only for that event and
+          does not sign anyone in.
+        </p>
+        <p>
+          A review counts towards the rating of the event&rsquo;s host: the Community for a
+          Community event, or the Member who created it for a Member&rsquo;s event, and each co-host.
+          Reviews are shown publicly on the host&rsquo;s event pages, including to visitors who are
+          not signed in, with the reviewer&rsquo;s first name and last initial, or with no name if
+          the reviewer chooses to post anonymously. The host can always see who wrote a review.
+        </p>
+        <p>
+          Hosts may reply publicly to a review, hide a review, or turn reviews off for an event or
+          for all of their events. Reviews must be honest accounts of the reviewer&rsquo;s own
+          experience and must not contain unlawful, abusive, or misleading content; Cobuntu and the
+          host may remove reviews that do. You are responsible for the reviews you write (see
+          Section 17.2). If you delete your account, your reviews remain in the host&rsquo;s
+          rating, without your name and without their text.
         </p>
       </section>
 
@@ -475,10 +514,9 @@ export function TermsContent() {
           {" "}<a href="https://stripe.com/pricing" target="_blank" rel="noopener noreferrer">Stripe&rsquo;s pricing page</a>).
           When a refund is later issued, Stripe returns the principal but <strong>does not</strong>
           {" "}return the processing fee it kept on the original charge. That fee is unrecoverable. As a
-          rule Cobuntu does not absorb it; it is borne by one of the parties described below. Two
-          narrow exceptions apply: Cobuntu absorbs the small fixed per-transaction component on
-          donation tips, and it absorbs any residual dispute or refund fee that genuinely cannot be
-          recovered from the Seller. Otherwise, who bears the fee depends on whether the sale had
+          rule Cobuntu does not absorb it; it is borne by one of the parties described below. One
+          narrow exception applies: Cobuntu absorbs any residual dispute or refund fee that genuinely
+          cannot be recovered from the Seller. Otherwise, who bears the fee depends on whether the sale had
           already converted to a confirmed attendance at the moment the refund fires:
         </p>
         <ul>
@@ -717,7 +755,7 @@ export function TermsContent() {
         <ul>
           <li>The Community sets the commission rate. The rate may be a flat percentage configured by the Community per membership tier and product type (a per-tier by per-type matrix), or negotiated per submission via the listing chat. The applicable rate is shown to you when you publish.</li>
           <li>Cobuntu does not take a commission directly from you. On member sales, the member pays no platform fee; Cobuntu&rsquo;s revenue comes from a percentage of the Community&rsquo;s commission, charged to the Community.</li>
-          <li>Donations attached to a member listing are not subject to community commission and flow in full to you, less only Stripe&rsquo;s percentage processing fee; Cobuntu absorbs the fixed per-transaction component on donations (see Section 5.3).</li>
+          <li>Donations attached to a member listing carry the Community&rsquo;s commission at the same rate as the listing&rsquo;s sales; Stripe&rsquo;s actual processing fee on the donation is deducted from it, and Cobuntu takes nothing (see Section 5.3).</li>
         </ul>
 
         <h3>13.4 Stripe Connect Requirement for Paid Listings</h3>
@@ -995,8 +1033,8 @@ export function TermsContent() {
         </p>
         <h3>17.2 Your Content</h3>
         <p>
-          You retain ownership of the Content you submit (listings, profile content, messages, images,
-          and other materials). You grant Cobuntu a worldwide, non-exclusive, royalty-free licence to
+          You retain ownership of the Content you submit (listings, profile content, messages, event
+          reviews, images, and other materials). You grant Cobuntu a worldwide, non-exclusive, royalty-free licence to
           host, store, reproduce, adapt (for formatting and display), and communicate that Content to
           the extent necessary to operate, secure, promote, and improve the Platform and to deliver
           your sales. You are responsible for your Content and warrant that you have the rights
