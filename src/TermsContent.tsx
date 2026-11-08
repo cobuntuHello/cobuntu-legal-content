@@ -174,7 +174,11 @@ export function TermsContent() {
         <p>
           Any event or product may enable optional donations: a &ldquo;tip&rdquo; a Buyer may add on
           top at checkout, a donation given when registering for a free event, or a donation given
-          on its own. Donations may be a fixed amount or Buyer-chosen, with an optional minimum.
+          on its own. For an event, the Seller chooses when donations are asked for: when people
+          register, after the event (alongside the request to review it), or both. The Seller may
+          suggest amounts and may set a minimum, but the person giving always chooses the amount,
+          including an amount of their own, which cannot be lower than the payment processor&rsquo;s
+          minimum charge. Donations are only offered while the Seller is able to receive them.
         </p>
         <p>
           <strong>Donations to an event are for its attendees.</strong> A donation given on its own
