@@ -755,7 +755,7 @@ export function TermsContent() {
         <h3>13.8 Tax Responsibility</h3>
         <ul>
           <li>You are responsible for your own tax obligations on sales you make, including any applicable VAT, sales tax, or income tax. Cobuntu is not your tax adviser.</li>
-          <li>Cobuntu&rsquo;s handling of VAT on your sales, and the domestic-only mechanism by which it determines when VAT is added, is set out in Section 15 (Value Added Tax &amp; Other Taxes). Sellers remain responsible for VAT on their own underlying sales.</li>
+          <li>Cobuntu&rsquo;s handling of VAT on your sales, and the rules by which it determines when VAT is added, is set out in Section 15 (Value Added Tax &amp; Other Taxes). Sellers remain responsible for VAT on their own underlying sales.</li>
           <li>You are responsible for the accuracy of your VAT registration details and for reporting and remitting VAT to the relevant authorities.</li>
           <li>For statutory tax forms, see Section 15.4.</li>
         </ul>
@@ -861,7 +861,7 @@ export function TermsContent() {
         <p>
           If you are VAT-registered, you may record your VAT registration (number and country) in your
           Cobuntu seller settings and set a VAT rate on what you sell, as described in Sections 15.2A
-          and 15.2B. You choose the rate and are responsible for it being correct.
+          to 15.2D. You choose the rate and are responsible for it being correct.
         </p>
         <p>
           Prices are entered and shown on the Platform before VAT. The VAT is worked out at checkout and
@@ -881,17 +881,27 @@ export function TermsContent() {
           that shows the VAT reversed, and the refunded VAT is not paid to you.
         </p>
         <p>
-          VAT is not currently available on recurring subscriptions, memberships, instalment plans or
-          items sent by post, and you remain responsible for accounting for any VAT due on them. You
-          are responsible for the accuracy of your VAT registration details and for reporting and
-          remitting VAT to the relevant authorities.
+          You are responsible for the accuracy of your VAT registration details, including the region
+          you are established in where it has its own VAT rates (such as the Azores or Madeira), and for
+          reporting and remitting VAT to the relevant authorities.
         </p>
         <h3>15.2A VAT on Event Tickets</h3>
         <p>
-          VAT on admission to an event is charged where the event takes place, whoever the Buyer is.
-          You may set a VAT rate on a ticket when you are VAT-registered in the country where your
-          event takes place and the Platform offers VAT there.
+          VAT on admission to an event held in person is charged where the event takes place, whoever
+          the Buyer is. You may set a VAT rate on a ticket when you are VAT-registered in the country
+          where your event takes place and the Platform offers VAT there.
         </p>
+        <p>
+          Admission to an event held only online is taxed where the Buyer is. You may set a VAT rate on
+          an online event only after confirming in your VAT details that you are registered for the EU
+          One-Stop Shop (OSS), through which you declare the VAT due in other EU countries. At checkout:
+        </p>
+        <ul>
+          <li><strong>A Buyer in your country</strong> is charged your VAT at the rate you set.</li>
+          <li><strong>A Buyer in another EU country</strong> is charged that country&rsquo;s standard rate of VAT.</li>
+          <li><strong>A VAT-registered business Buyer in another EU country</strong> that provides a valid VAT identification number is charged no VAT, and the receipt states the reverse charge.</li>
+          <li><strong>A Buyer outside the EU</strong> is charged no EU VAT.</li>
+        </ul>
         <h3>15.2B VAT on Products and Courses</h3>
         <p>
           You may set a VAT rate on a product or course when you are VAT-registered in a country where
@@ -908,8 +918,31 @@ export function TermsContent() {
         <p>
           The Buyer states their country at checkout. You must withdraw your confirmation as soon as your
           sales to consumers in other EU countries exceed the threshold. The Platform does not yet
-          support the EU One-Stop Shop, and above the threshold you are responsible for accounting for
-          VAT where each Buyer is.
+          support the EU One-Stop Shop for products and courses, and above the threshold you are
+          responsible for accounting for VAT where each Buyer is.
+        </p>
+        <h3>15.2C VAT on Items Sent by Post</h3>
+        <p>
+          An item sent by post can only be delivered within the country of your payout account. You
+          may set a VAT rate on it when your VAT registration is from that country. Every Buyer is then
+          charged your VAT at the rate you set, on the item and on its postage, which forms part of the
+          same sale. The receipt shows the postage and the VAT on it.
+        </p>
+        <h3>15.2D VAT on Subscriptions, Instalment Plans and Memberships</h3>
+        <p>
+          VAT on a subscription or an instalment plan follows Section 15.2B for products and courses
+          and Section 15.2A for event tickets. A membership tier is treated as access to a digital
+          service under Section 15.2B, and a Buyer of a membership is charged as a consumer in the EU.
+          The reverse charge for business Buyers is not currently applied to subscriptions, instalment
+          plans or memberships.
+        </p>
+        <p>
+          The VAT is determined once, when the Buyer subscribes, and the same VAT is added to every
+          later payment of that subscription or plan. A change you make to a VAT setting applies to new
+          subscribers only: existing subscribers keep the price and the VAT they subscribed at. Because
+          the VAT is fixed at subscription, it continues on later payments even if your VAT
+          registration changes afterwards, and you remain responsible for any VAT collected on your
+          behalf.
         </p>
         <h3>15.3 VAT on Cobuntu&rsquo;s Own Fees (Upon VAT Registration)</h3>
         <p>
