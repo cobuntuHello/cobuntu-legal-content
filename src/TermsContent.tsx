@@ -316,28 +316,36 @@ export function TermsContent() {
           content they deliver (see Section 10).
         </p>
       
-        <h3>5.10 Event Reviews</h3>
+        <h3>5.10 Reviews</h3>
         <p>
-          After an event ends, people who held a confirmed place at it may review it (a rating from
-          one to five stars and an optional comment) for 30 days. Hosts and co-hosts cannot review
-          their own events. A Buyer without an account may review through a personal link sent to
-          the email address the place was booked with; that link works only for that event and
-          does not sign anyone in.
+          People may review what they took part in or bought through the Platform: an event, after
+          it ends, if they held a confirmed place at it (for 30 days afterwards); and a Product or
+          Course, if they bought it and the purchase has not been fully refunded (at any time). A
+          review is a rating from one to five stars and an optional comment. Hosts, co-hosts,
+          Sellers and co-sellers cannot review what they host or sell. A Buyer without an account
+          may review through a personal link sent to the email address of the booking or purchase;
+          that link works only for that event or purchase and does not sign anyone in.
         </p>
         <p>
-          A review counts towards the rating of the event&rsquo;s host: the Community for a
-          Community event, or the Member who created it for a Member&rsquo;s event, and each co-host.
-          Reviews are shown publicly on the host&rsquo;s event pages, including to visitors who are
-          not signed in, with the reviewer&rsquo;s first name and last initial, or with no name if
-          the reviewer chooses to post anonymously. The host can always see who wrote a review.
+          A review counts towards the rating of whoever offers what was reviewed: the Community, for
+          an event, Product or Course the Community offers; otherwise the Member who created it; and
+          each co-host or co-seller. A Member&rsquo;s rating across everything they offer may be
+          shown on their profile. Reviews are shown publicly on the host&rsquo;s or Seller&rsquo;s
+          pages and profile, including to visitors who are not signed in, with the reviewer&rsquo;s
+          first name and last initial (or the first name a Buyer without an account chooses to
+          give), or with no name if the reviewer chooses to post anonymously. The host or Seller can
+          always see who wrote a review.
         </p>
         <p>
-          Hosts may reply publicly to a review, hide a review, or turn reviews off for an event or
-          for all of their events. Reviews must be honest accounts of the reviewer&rsquo;s own
-          experience and must not contain unlawful, abusive, or misleading content; Cobuntu and the
-          host may remove reviews that do. You are responsible for the reviews you write (see
-          Section 17.2). If you delete your account, your reviews remain in the host&rsquo;s
-          rating, without your name and without their text.
+          Hosts and Sellers may reply publicly to a review and may hide the text of a review; the
+          star rating of a review whose text is hidden stays public and continues to count. They may
+          turn reviews off for an event, a Product or a Course, or for everything they offer; this
+          stops new reviews, and reviews already given stay public and continue to count. Reviews
+          must be honest accounts of the reviewer&rsquo;s own experience and must not contain
+          unlawful, abusive, or misleading content; Cobuntu may remove reviews that do. You are
+          responsible for the reviews you write (see Section 17.2). If you delete your account, your
+          reviews remain in the host&rsquo;s or Seller&rsquo;s rating, without your name and without
+          their text.
         </p>
       </section>
 
