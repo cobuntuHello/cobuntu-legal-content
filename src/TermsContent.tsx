@@ -815,7 +815,7 @@ export function TermsContent() {
 
         <h3>13.10 Member Prices on Your Listings</h3>
         <ul>
-          <li>Where the Platform makes it available, you may offer a lower price (a &ldquo;member price&rdquo;) on a product or course you have listed in a Community, for members of one or more of that Community&rsquo;s published membership tiers. Buyers who are not in those tiers pay your full price.</li>
+          <li>Where the Platform makes it available, you may offer a lower price (a &ldquo;member price&rdquo;) on a product, course or event you have listed in a Community, for members of one or more of that Community&rsquo;s published membership tiers. Buyers who are not in those tiers pay your full price.</li>
           <li>A member price is your own discount. The Community&rsquo;s commission (Section 13.3) is calculated on the price the Buyer actually pays, excluding VAT, and you receive the rest less the applicable fees. Neither Cobuntu nor the Community pays the difference between your full price and your member price.</li>
           <li>A member price applies only while your listing in that Community is live. Where the Community reviews member listings, it reviews your member prices together with your listing, and they take effect only when the listing is approved. While the listing is pending, paused, revoked or removed, Buyers pay your full price.</li>
           <li>Where the Community reviews member listings, adding, changing or removing a member price on a live listing returns the listing to a pending state under Section 13.5 until the Community re-approves it. Where it does not review member listings, the change applies immediately.</li>
