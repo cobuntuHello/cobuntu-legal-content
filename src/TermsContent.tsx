@@ -776,7 +776,7 @@ export function TermsContent() {
         <h3>13.5 Editing and Re-Approval</h3>
         <ul>
           <li>You may edit non-material fields (description, images, stock or availability) on a live listing at any time without re-approval.</li>
-          <li>Edits to material fields (title, price, scheduled date for events) revert the listing to a pending state. The listing is hidden from the marketplace until the Community Leader re-approves it.</li>
+          <li>Edits to material fields (title, price, scheduled date for events) revert the listing to a pending state. The listing is hidden from the marketplace until the Community Leader re-approves it. Adding, changing or removing a member price (Section 13.10) is a price edit.</li>
           <li>You may pause or remove your own listings at any time. Listings with in-flight Buyer obligations (pending refund windows, undelivered orders) cannot be permanently deleted until those obligations are resolved.</li>
         </ul>
 
@@ -812,6 +812,15 @@ export function TermsContent() {
           on your behalf; the host Community is identified as the marketplace curator.
           None of this makes Cobuntu or the Community a party to your underlying sale.
         </p>
+
+        <h3>13.10 Member Prices on Your Listings</h3>
+        <ul>
+          <li>Where the Platform makes it available, you may offer a lower price (a &ldquo;member price&rdquo;) on a product or course you have listed in a Community, for members of one or more of that Community&rsquo;s published membership tiers. Buyers who are not in those tiers pay your full price.</li>
+          <li>A member price is your own discount. The Community&rsquo;s commission (Section 13.3) is calculated on the price the Buyer actually pays, excluding VAT, and you receive the rest less the applicable fees. Neither Cobuntu nor the Community pays the difference between your full price and your member price.</li>
+          <li>A member price applies only while your listing in that Community is live. Where the Community reviews member listings, it reviews your member prices together with your listing, and they take effect only when the listing is approved. While the listing is pending, paused, revoked or removed, Buyers pay your full price.</li>
+          <li>Where the Community reviews member listings, adding, changing or removing a member price on a live listing returns the listing to a pending state under Section 13.5 until the Community re-approves it. Where it does not review member listings, the change applies immediately.</li>
+          <li>Whether a Buyer qualifies is determined by their membership at the time of purchase. A completed one-time purchase keeps the price it was sold at. For a subscription, the member price continues only while the Buyer remains in a qualifying tier; if they leave it, later renewals are charged at your full price.</li>
+        </ul>
       </section>
 
       <section>
