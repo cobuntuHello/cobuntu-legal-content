@@ -519,7 +519,10 @@ export function TermsContent() {
           <strong> outside Cobuntu&rsquo;s control</strong>. If the card network rules in your favour,
           the funds return to you and the Community organiser bears both the Stripe processing fee and
           a flat dispute fee (currently approximately &euro;15) charged by the card network, netted
-          off their payouts. We strongly recommend using the in-app refund flow first (it is faster,
+          off their payouts. If it rules in the Community organiser&rsquo;s favour, the charge stands,
+          but Stripe still keeps the fee it charged for handling the dispute (it returns only a
+          separate fee for countering one), and the Community organiser bears that fee too, netted off
+          their payouts. We strongly recommend using the in-app refund flow first (it is faster,
           costs nobody the extra network dispute fee, and we can confirm it immediately).
         </p>
         <h3>9.6 Stripe Processing Fees on Refunds</h3>
@@ -559,7 +562,8 @@ export function TermsContent() {
           <li>
             <strong>Chargebacks (Section 9.5):</strong> governed by the card network. On a lost
             dispute the Community organiser bears both the Stripe processing fee and the flat
-            card-network dispute fee (currently approximately &euro;15), netted off their payouts.
+            card-network dispute fee (currently approximately &euro;15), netted off their payouts. On
+            a won dispute the charge stands and they bear only the dispute fee Stripe keeps.
           </li>
         </ul>
         <p>
