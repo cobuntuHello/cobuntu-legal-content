@@ -214,6 +214,10 @@ export function TermsContent() {
           different currency) is handled by your bank or card network and may include additional
           fees.
         </p>
+        <p>
+          For Sellers: a sale priced in a currency other than the euro is paid out to you in euros,
+          at Stripe&rsquo;s exchange rate, as described in Section 12.1.
+        </p>
         <h3>5.5 Per-Tier Registration Forms</h3>
         <p>
           Hosts may require attendees to complete a registration form when buying a specific tier
@@ -580,6 +584,10 @@ export function TermsContent() {
           converted (that is, pre-approval) do <strong>not</strong> appear in this line item because
           the Community is not charged for them.
         </p>
+        <p>
+          On a sale priced in a currency other than the euro, a refund or chargeback can also leave
+          an exchange-rate difference. Section 12.1 explains who carries it.
+        </p>
 
         <h3>9.7 Post-Payout Recovery (Clawback)</h3>
         <p>
@@ -743,6 +751,39 @@ export function TermsContent() {
           <li>If a payout fails (for example, a Stripe transfer error, or an account not configured), Cobuntu logs the failure with a clear reason and creates a recovery payout in a subsequent sweep.</li>
           <li>Communities can view pending, processing, completed, and failed payouts in their admin dashboard.</li>
         </ul>
+
+        <h3>12.1 Sales in a Currency Other Than the Euro</h3>
+        <p>
+          You may price a listing in a currency other than the euro (Section 5.4), and the Buyer pays
+          in that currency. Cobuntu&rsquo;s Stripe balance holds euros, so Stripe converts each such
+          payment into euros at its own exchange rate on the day of the sale, and{" "}
+          <strong>every payout is made in euros</strong>. What such a sale pays you is your share of
+          the euros Stripe settled for it, after the fees that apply to it. Your ledger and payout
+          statements show the sale in its own currency, with the euro amount and the rate. Cobuntu
+          does not set the rate.
+        </p>
+        <p>
+          Exchange rates move. When such a sale is later refunded, in whole or in part, Stripe takes
+          the refund from Cobuntu&rsquo;s euro balance at its rate on the day of the refund, which can
+          be more or fewer euros than that part of the sale brought in. The difference, whichever way
+          it goes, is yours: it is deducted from, or added to, your next payout as its own line,
+          labelled with both rates. This applies to every refund of such a sale, whoever bears the
+          Stripe processing fee on it (Section 9.6). A chargeback (Section 9.5) is treated the same
+          way: on a lost dispute, you carry the difference between what Stripe withdrew and what that
+          part of the sale brought in; if the funds are later returned (a won or reinstated dispute),
+          you carry the difference between what Stripe withdrew and what it returned.
+        </p>
+        <p>
+          Where a refund has no sale behind it (for example, a paid membership that was never
+          claimed, or a founding reservation cancelled before launch), the Community that set the
+          price carries the difference, in the same way.
+        </p>
+        <p>
+          Where a fee or a minimum amount has a fixed part (for example, the fixed part of a fee on
+          a member sale, or the smallest donation that can be charged), it is set in each currency at
+          a round amount worth about the same as in euros, and reviewed when exchange rates move
+          significantly.
+        </p>
       </section>
 
       <section>
