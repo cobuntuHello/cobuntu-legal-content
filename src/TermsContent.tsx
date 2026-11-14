@@ -439,8 +439,9 @@ export function TermsContent() {
           deducted from the Seller&rsquo;s net proceeds by Cobuntu; the applicable rate is disclosed
           to the Seller. Where a Community has no rate configured, a default rate (currently 8%)
           applies; a Community may also configure a rate of 0%, which is honoured. For member-listed
-          sales, Cobuntu does not charge the member a fee directly; its revenue comes from a share of
-          the Community&rsquo;s commission (see Section 13.3).
+          sales, Cobuntu charges the member an all-in seller fee, out of which it pays Stripe&rsquo;s
+          processing fee, and also takes a share of the Community&rsquo;s commission (see Section
+          13.3).
         </p>
         <p>
           Stripe charges its standard processing fee per transaction (typically 2.9% plus a fixed
@@ -814,7 +815,8 @@ export function TermsContent() {
         <h3>13.3 Commission Terms</h3>
         <ul>
           <li>The Community sets the commission rate. The rate may be a flat percentage configured by the Community per membership tier and product type (a per-tier by per-type matrix), or negotiated per submission via the listing chat. The applicable rate is shown to you when you publish.</li>
-          <li>Cobuntu does not take a commission directly from you. On member sales, the member pays no platform fee; Cobuntu&rsquo;s revenue comes from a percentage of the Community&rsquo;s commission, charged to the Community.</li>
+          <li>On each paid sale, Cobuntu charges you an all-in seller fee: currently 4% of your share (the price, excluding VAT, less the Community&rsquo;s commission) plus a fixed amount of about &euro;0.30, set in each currency (Section 12.1), and, where the price includes VAT, Stripe&rsquo;s percentage fee on that VAT. Stripe&rsquo;s processing fee on the sale is paid out of this fee, so it is not deducted from you again. The fee that applies is shown to you when you publish. Free listings carry no fee.</li>
+          <li>Cobuntu also takes a percentage of the Community&rsquo;s commission, charged to the Community.</li>
           <li>Donations attached to a member listing carry the Community&rsquo;s commission at the same rate as the listing&rsquo;s sales; Stripe&rsquo;s actual processing fee on the donation is deducted from it, and Cobuntu takes nothing (see Section 5.3).</li>
         </ul>
 
