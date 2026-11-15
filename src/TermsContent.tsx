@@ -27,7 +27,9 @@
  * (consumer-law limits may apply where the Seller is an individual, not a business).
  *
  * Scope (intentional omissions, business reasons):
- * - Premium subscriptions are not described (feature on hold).
+ * - Premium subscriptions are described only where they change a seller's fees (13.3: no
+ *   member seller fee with an active Premium subscription); the subscription itself (price,
+ *   billing, cancellation) is not described yet.
  * - Cobuntu collects payment on the Seller's behalf (platform-collect): funds are collected by
  *   Cobuntu, held in escrow, then the Seller's net is paid out by the daily payout
  *   sweep once the sale's refund window has closed. Commission is negotiated per
@@ -213,6 +215,10 @@ export function TermsContent() {
           subsequent price changes. Currency conversion (if your card&rsquo;s issuer charges in a
           different currency) is handled by your bank or card network and may include additional
           fees.
+        </p>
+        <p>
+          For Sellers: a sale priced in a currency other than the euro is paid out to you in euros,
+          at Stripe&rsquo;s exchange rate, as described in Section 12.1.
         </p>
         <h3>5.5 Per-Tier Registration Forms</h3>
         <p>
@@ -435,8 +441,9 @@ export function TermsContent() {
           deducted from the Seller&rsquo;s net proceeds by Cobuntu; the applicable rate is disclosed
           to the Seller. Where a Community has no rate configured, a default rate (currently 8%)
           applies; a Community may also configure a rate of 0%, which is honoured. For member-listed
-          sales, Cobuntu does not charge the member a fee directly; its revenue comes from a share of
-          the Community&rsquo;s commission (see Section 13.3).
+          sales, Cobuntu charges the member a seller fee on their share (none with an active Cobuntu
+          Premium subscription), deducts Stripe&rsquo;s processing fee from the member&rsquo;s
+          proceeds, and also takes a share of the Community&rsquo;s commission (see Section 13.3).
         </p>
         <p>
           Stripe charges its standard processing fee per transaction (typically 2.9% plus a fixed
@@ -579,6 +586,10 @@ export function TermsContent() {
           organiser&rsquo;s payout summary so they remain auditable. Refunds issued before the sale
           converted (that is, pre-approval) do <strong>not</strong> appear in this line item because
           the Community is not charged for them.
+        </p>
+        <p>
+          On a sale priced in a currency other than the euro, a refund or chargeback can also leave
+          an exchange-rate difference. Section 12.1 explains who carries it.
         </p>
 
         <h3>9.7 Post-Payout Recovery (Clawback)</h3>
@@ -743,6 +754,39 @@ export function TermsContent() {
           <li>If a payout fails (for example, a Stripe transfer error, or an account not configured), Cobuntu logs the failure with a clear reason and creates a recovery payout in a subsequent sweep.</li>
           <li>Communities can view pending, processing, completed, and failed payouts in their admin dashboard.</li>
         </ul>
+
+        <h3>12.1 Sales in a Currency Other Than the Euro</h3>
+        <p>
+          You may price a listing in a currency other than the euro (Section 5.4), and the Buyer pays
+          in that currency. Cobuntu&rsquo;s Stripe balance holds euros, so Stripe converts each such
+          payment into euros at its own exchange rate on the day of the sale, and{" "}
+          <strong>every payout is made in euros</strong>. What such a sale pays you is your share of
+          the euros Stripe settled for it, after the fees that apply to it. Your ledger and payout
+          statements show the sale in its own currency, with the euro amount and the rate. Cobuntu
+          does not set the rate.
+        </p>
+        <p>
+          Exchange rates move. When such a sale is later refunded, in whole or in part, Stripe takes
+          the refund from Cobuntu&rsquo;s euro balance at its rate on the day of the refund, which can
+          be more or fewer euros than that part of the sale brought in. The difference, whichever way
+          it goes, is yours: it is deducted from, or added to, your next payout as its own line,
+          labelled with both rates. This applies to every refund of such a sale, whoever bears the
+          Stripe processing fee on it (Section 9.6). A chargeback (Section 9.5) is treated the same
+          way: on a lost dispute, you carry the difference between what Stripe withdrew and what that
+          part of the sale brought in; if the funds are later returned (a won or reinstated dispute),
+          you carry the difference between what Stripe withdrew and what it returned.
+        </p>
+        <p>
+          Where a refund has no sale behind it (for example, a paid membership that was never
+          claimed, or a founding reservation cancelled before launch), the Community that set the
+          price carries the difference, in the same way.
+        </p>
+        <p>
+          Where a fee or a minimum amount has a fixed part (for example, the fixed part of a fee on
+          a member sale, or the smallest donation that can be charged), it is set in each currency at
+          a round amount worth about the same as in euros, and reviewed when exchange rates move
+          significantly.
+        </p>
       </section>
 
       <section>
@@ -773,7 +817,8 @@ export function TermsContent() {
         <h3>13.3 Commission Terms</h3>
         <ul>
           <li>The Community sets the commission rate. The rate may be a flat percentage configured by the Community per membership tier and product type (a per-tier by per-type matrix), or negotiated per submission via the listing chat. The applicable rate is shown to you when you publish.</li>
-          <li>Cobuntu does not take a commission directly from you. On member sales, the member pays no platform fee; Cobuntu&rsquo;s revenue comes from a percentage of the Community&rsquo;s commission, charged to the Community.</li>
+          <li>On each paid sale, Cobuntu charges you a seller fee: currently 2.5% of your share (the price, excluding VAT, less the Community&rsquo;s commission) plus a fixed amount of about &euro;0.05, set in each currency (Section 12.1). Stripe&rsquo;s processing fee on the sale, including any currency conversion, is deducted from your proceeds in addition to this fee. If you hold an active Cobuntu Premium subscription when the sale is made, Cobuntu charges you no seller fee; Stripe&rsquo;s processing fee is still deducted. Each sale keeps the fee that applied when it was made. The fee that applies is shown to you when you publish. Free listings carry no fee.</li>
+          <li>Cobuntu also takes a percentage of the Community&rsquo;s commission, charged to the Community.</li>
           <li>Donations attached to a member listing carry the Community&rsquo;s commission at the same rate as the listing&rsquo;s sales; Stripe&rsquo;s actual processing fee on the donation is deducted from it, and Cobuntu takes nothing (see Section 5.3).</li>
         </ul>
 
