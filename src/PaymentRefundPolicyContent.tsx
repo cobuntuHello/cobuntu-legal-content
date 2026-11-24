@@ -5,10 +5,11 @@
  * not the legal contract; the Terms of Service govern.
  *
  * KEEP ACCURATE to the deployed system (see the cobuntu-legal-docs skill): event
- * refund runs to event end + payout end+4d; digital 14d; membership first charge
+ * refund runs to event end, and event money pays the day after the event in one
+ * payout, new sellers included (T-393); digital 14d; membership first charge
  * 7d and renewals immediate; product-subscription renewals now pay immediately
  * too; per-community commission (default 8%); Stripe fees on the seller; EUR10
- * minimum + 30-day floor; 21-day new-seller hold.
+ * minimum + 30-day floor; 21-day new-seller hold, never on event money.
  */
 export function PaymentRefundPolicyContent() {
   return (
@@ -75,7 +76,7 @@ export function PaymentRefundPolicyContent() {
           your own connected Stripe account. When that release happens depends on what you sold:
         </p>
         <ul>
-          <li><strong>Events:</strong> a few days after the event ends (event end plus about 4 days, to cover no-shows).</li>
+          <li><strong>Events:</strong> the day after the event ends, in one payment for the whole event, whether you are new to selling or not.</li>
           <li><strong>Digital products:</strong> about 14 days after the sale.</li>
           <li>
             <strong>Physical items:</strong> 30 days after the item is delivered, not after the sale.
@@ -89,7 +90,7 @@ export function PaymentRefundPolicyContent() {
         </ul>
         <p>Two things that can affect the exact timing:</p>
         <ul>
-          <li><strong>New sellers:</strong> your first payouts are held a bit longer (about 21 days) as fraud protection. This eases to the normal schedule once you verify your identity with Stripe and complete a few clean sales.</li>
+          <li><strong>New sellers:</strong> your first payouts for products, courses and memberships are held a bit longer (about 21 days) as fraud protection. This eases to the normal schedule once you verify your identity with Stripe and complete a few clean sales. Event money is never held this way: it is paid the day after the event.</li>
           <li><strong>Minimum payout:</strong> a small minimum (about &euro;10) applies. Balances below it add up and are released once they reach the minimum, or after 30 days at the latest.</li>
         </ul>
         <p>
